@@ -1,0 +1,24 @@
+CPU Timing
+----------------
+CPU encrypt: 0.073108 ms
+CPU encrypt: 0.063140 ms
+CPU encrypt: 0.066045 ms
+CPU encrypt: 0.068600 ms
+CPU encrypt: 0.063921 ms
+CPU encrypt: 0.069772 ms
+CPU encrypt: 0.065144 ms
+CPU encrypt: 0.081825 ms
+CPU encrypt: 0.064904 ms
+CPU encrypt: 0.079240 ms
+
+----------------
+CPU decrypt: 0.196212 ms
+CPU decrypt: 0.195912 ms
+CPU decrypt: 0.194770 ms
+CPU decrypt: 0.195040 ms
+CPU decrypt: 0.195381 ms
+CPU decrypt: 0.195932 ms
+CPU decrypt: 0.195070 ms
+CPU decrypt: 0.224346 ms
+CPU decrypt: 0.194429 ms
+CPU decrypt: 0.196403 ms
