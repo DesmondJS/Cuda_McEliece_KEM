@@ -1,0 +1,78 @@
+Chap 1 1
+1.1 2
+1.2, 1.3 3
+1.4 4
+1.5 4
+
+Chap 2
+2.1
+2.1.1
+2.1.2 = 6
+
+2.1.3 Programming Language
+2.1.4 Algorithm = 7
+
+2.1.5 Summary of the Technologies Review = 8
+
+2.2 Review of Efficient Implementation of McEliece Cryptosystem on GPU
+2.2.1 Summary
+2.2.2 Strengths and Weaknesses = 9
+2.2.3 Proposed Improvement = 11
+
+2.3 Review of Fast Hardware Architecture with Efficient Matrix Computations for Key Generation of Classic McEliece
+2.3.1
+2.3.2 = 12
+2.3.3 = 14
+
+2.4 Review of Optimized and Scalable Co-Processor for McEliece with Binary Goppa Codes
+2.4.1
+2.4.2 = 15
+2.4.3 = 17
+
+2.5 Review of Evaluation of Gaussian Elimination Using HLS for Fast Public Key Generation
+2.5.1
+2.5.2 = 18
+2.5.3 = 19
+
+2.6 Review of Symphony of Speeds: Harmonizing Classic McEliece Cryptography with GPU Innovation
+2.6.1
+2.6.2 = 20
+2.6.3 = 21
+2.7 Summary for LR = 22
+
+Chap 3
+3.1 System Design Diagram = 23
+3.1.1 System Architecture Diagram = 24
+3.1.2 UC Diagram & Description = 25
+3.1.3 Activity D = 26
+
+Chap 4 
+4.1 SB Diag = 28
+4.2 System Components & Design Specs 
+4.2.1 Utility Functions (Device) = 30
+4.2.2 Kernel Functions = 45
+4.2.3 Host Functions = 62
+
+Chap 5
+5.1 Hardware Setup
+5.2 Software Setup = 71
+5.3 Setting & Config
+5.4 System Operation = 72
+5.5 Implem issues & cha = 74
+5.6 Concluding Re = 75
+
+Chap 6
+6.1 ST&PM
+6.2 TS & R = 76
+6.3 P C
+6.4 O E = 83
+6.5 CR = 84
+
+Chap 7
+7.1 C =85
+7.2 Rec = 87
+
+FIgure list = viii
+Table list = x
+Symbol list = xi
+abrevia = xii

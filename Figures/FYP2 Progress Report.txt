@@ -1,0 +1,77 @@
+Week1
+-------
+- Tried implementing vec version to CUDA version and changed the codes
+- Failed by segmentation fault (core dumped)
+- Maybe its due to memory access error
+- Cant find out where error is
+
+W2
+---
+- Redo whole encryption process step by step following the vec version
+- No major changes to functions except compute_val and set_bits which need to use d_val and d_ind
+- Added 64 bits integer variables for new d_val, d_ind, d_e_int which is later then used to convert 64 bits back to unsigned char e[]
+- Converted every parts of the code and tried running
+- Still failed to segmentation fault
+- Suspect problem is in how crypto_kem_enc pass through pk, ct and ss
+- Will try solving the bugs this week
+
+W3
+---
+- Identify segmentation fault in the uint16_sort function 
+- Which is a CPU function that has to be converted into a GPU function
+- Did convertion and run the program again
+- Starting to see results of the code 
+- Start to test result with the VEC version results to see if they align with each other
+- If so, will start to do encapsulation
+
+W4
+---
+- Successfully checked that d_ind aligns and is same with the KAT positions.
+- But there is still some errors in set_bits which makes the final encrypt e positions only having 55 bits and not 64 bits which is the correct one
+- Will find out what is the problem with it 
+
+W5
+-----
+- Successfully get the correct bits output to 64
+- But the real total bits outputs is still 55
+- Will find out the real issue and solve it
+
+W6
+-----
+- Done fixed set bits problem
+- But another problem in syndrome_kernel
+- Start to fixing it
+
+W7
+-----
+- Finally done fix syndrome kernel
+1. Problem Identification
+    The CUDA implementation of the syndrome function was producing inconsistent and incorrect outputs compared to the vectorised CPU (VEC) version.
+    The issue was not with the encryption or error vector generation (those were correct) but with the syndrome computation step on GPU.
+    Results differed between runs, indicating possible memory handling or thread synchronisation problems.
+
+2. Root Cause
+    Misaligned memory offsets: The CUDA kernel did not handle the offset between the first part of e (used directly for the initial SYND_BYTES) and the second part (used for bitwise AND with public key rows).
+    Kernel configuration mismatch: Grid/block sizing was not adapted correctly to PK_NROWS.
+    Possible uninitialised or leftover memory values influencing results due to lack of proper zero-initialisation in device arrays.
+
+3. Changes Implemented
+    Memory alignment fix: Adjusted pointer usage so the e array indexing in CUDA matches the CPU VEC version exactly.
+    Logic alignment: Translated the CPU’s loop-based XOR and bit-reduction logic directly into the CUDA kernel while preserving vectorised operations where possible.
+    Kernel launch configuration: Computed the number of blocks as (PK_NROWS + threadsPerBlock - 1) / threadsPerBlock to ensure all rows are processed.
+    Memory initialisation: Ensured d_s and d_e were correctly set at the start of the kernel execution.
+    Offset handling: Used e + SYND_BYTES (CPU behaviour) consistently in GPU indexing for the second stage of the syndrome computation.
+
+4. Outcome
+    CUDA syndrome output now matches the CPU VEC version exactly for the same input data.
+    Output is stable and deterministic across multiple runs.
+    The fix resolves the mismatch problem and allows GPU acceleration without sacrificing correctness.
+
+W8
+-----
+Done Implementation of Encapsulation
+
+W9-W14
+-----
+Implementation of decrypt and decapsulation
+Optimization of code

@@ -1,0 +1,80 @@
+Figure 3.1	System Design Diagram = 23
+Figure 3.1.1	System Architecture Diagram = 24
+Figure 3.1.2	Use Case Diagram = 25
+Figure 3.1.3	Activity Diagram = 26
+
+Figure 4.1 System Block Diagram = 28
+Figure 4.2 load_gf = 30
+Figure 4.3 crypto_uint16_smaller_mask = 31
+Figure 4.4 uint16_is_smaller_declassify = 32
+Figure 4.5 crypto_uint32_equal_mask = 32
+Figure 4.6 uint32_is_equal_declassify
+Figure 4.7 store8 = 33
+Figure 4.8 ld64_unaligned =34
+Figure 4.9 ld32_unaligned
+Figure 4.10 atomic_xor_bit = 35
+d//
+Figure 4.11 d_vec_add =37
+Figure 4.12 d_transpose_64x64 = 38
+Figure 4.13 d_vec_copy =39
+Figure 4.14 d_vec_mull =40
+Figure 4.15 d_vec_sq =41
+Figure 4.16 d_vec_inv =42
+Figure 4.17 d_layer_parallel 
+Figure 4.18 d_broadcast_and_beta =43
+
+//Kernels
+Figure 4.19 load_gf_kernel
+Figure 4.20 filter_valid_indices = 45
+Figure 4.21 check_duplicates = 46
+Figure 4.22 compute_val
+Figure 4.23 set_bits = 47
+Figure 4.24 bitonic_sort_kernel = 48
+Figure 4.25 warmup_kernel =49
+Figure 4.26 syndrome_kernel_vecstyle = 50
+d//
+Figure 4.27 k_preprocess
+Figure 4.28 k_postprocess = 51
+Figure 4.29 k_form_error =52
+Figure 4.30 k_and_scale =53
+Figure 4.31 k_fft = 54
+Figure 4.32 k_fft_tr (i)
+Figure 4.33 k_fft_tr (ii) =55
+Figure 4.34 k_fft_tr (iii)=56
+Figure 4.35 k_sq_rows = 57
+Figure 4.36 k_build_inv =58
+Figure 4.37 k_benes =59
+Figure 4.38 k_synd_cmp =60
+Figure 4.39 k_weight_check =61
+
+//Host
+Figure 4.40 crypto_kem_enc_new =62
+Figure 4.41 crypto_kem_dec =63
+Figure 4.42 decrypt (i) 64
+Figure 4.43 decrypt (ii)65
+Figure 4.44 decrypt (iii)66
+Figure 4.45 decrypt (iv)67
+Figure 4.46 decrypt (v)68
+Figure 4.47 main.cpp 70
+
+CHAP5
+-----
+Table 5.1 Specifications of laptop = 71
+Figure 5.1 Encrypt Results
+Figure 5.2 Decrypt Results & SS comparison = 73
+Figure 5.3 Sample CSV results =74
+
+Chap 6
+-------
+Table 6.1 Testing Setup =76
+Table 6.2 CPU encrypt results
+Table 6.3 CPU decrypt results = 77
+Table 6.4 GPU encrypt results
+Table 6.5 GPU decrypt results = 78
+Figure 6.1 CPU Encrypt Time vs Throughput
+Figure 6.2 CPU Decrypt Time vs Throughput = 79
+Figure 6.3 GPU Encrypt Time
+Figure 6.4 GPU Encrypt Throughput = 80
+Figure 6.5 GPU Decrypt Time
+Figure 6.6 GPU Decrypt Throughput = 81
+
