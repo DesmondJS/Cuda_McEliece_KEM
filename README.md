@@ -1,6 +1,6 @@
 # 🚀 CUDA-Accelerated McEliece KEM (FYP2)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/DesmondJS/GPU_McEliece)
+![GitHub repo size](https://img.shields.io/github/repo-size/DesmondJS/Cuda_McEliece_KEM)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![CUDA](https://img.shields.io/badge/CUDA-12.4-blue)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-orange)
@@ -45,8 +45,8 @@ Here’s a highlight of the performance improvement:
 ## ⚙️ Installation & Usage
 
 ### 1️⃣ Clone the Repo
-- git clone [https://github.com/DesmondJS/GPU_McEliece.git]
-- cd GPU_McEliece
+- git clone [https://github.com/DesmondJS/Cuda_McEliece_KEM.git]
+- cd Cuda_McEliece_KEM
 
 ### 2️⃣ Build
 - make clean
