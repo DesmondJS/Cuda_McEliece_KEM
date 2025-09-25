@@ -1,6 +1,6 @@
 # 🚀 CUDA-Accelerated McEliece KEM (FYP2)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/YOUR_USERNAME/YOUR_REPO_NAME)
+![GitHub repo size](https://img.shields.io/github/repo-size/DesmondJS/GPU_McEliece)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![CUDA](https://img.shields.io/badge/CUDA-12.4-blue)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-orange)
@@ -8,7 +8,7 @@
 ## 📖 Overview
 This repository contains my **Final Year Project 2 (FYP2)** at Universiti Tunku Abdul Rahman (UTAR), focusing on **GPU parallelization** of the [Classic McEliece](https://classic.mceliece.org/) post-quantum cryptosystem using **CUDA**.
 
-The goal was to accelerate **encryption, decryption, encapsulation, and decapsulation** by offloading computationally heavy parts (syndrome generation, error vector formation, FFT, Benes network, etc.) to NVIDIA GPUs.  
+The goal was to accelerate **encryption, decryption, encapsulation, and decapsulation** by offloading computationally intensive tasks (syndrome generation, error vector formation, FFT, Benes network, etc.) to NVIDIA GPUs.  
 Performance was benchmarked and compared with an optimised CPU vectorized implementation, showing **significant throughput improvements**.
 
 ## ✨ Features
@@ -45,16 +45,19 @@ Here’s a highlight of the performance improvement:
 ## ⚙️ Installation & Usage
 
 ### 1️⃣ Clone the Repo
-bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+- git clone [https://github.com/DesmondJS/GPU_McEliece.git]
+- cd GPU_McEliece
 
 ### 2️⃣ Build
-make clean
-make
+- make clean
+- make
 
 ### 3️⃣ Run
-./run_test
+- ./run_test
 
 ## 🙌 Acknowledgements
 This project was completed as part of UTAR FYP under the supervision of Dr. Lee Wai Kong.
+
+## 📜 License
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+
