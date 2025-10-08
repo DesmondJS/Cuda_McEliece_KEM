@@ -31,6 +31,7 @@ Performance was benchmarked and compared with an optimised CPU vectorized implem
 ## 📊 Key Results (Throughput in Bytes/Second)
 Here’s a highlight of the performance improvement:
 
+**Encrypt:**
 | Num Blocks | CPU Encrypt (B/s) | GPU Encrypt (B/s) |
 |-----------|-----------------|-----------------|
 | 1 | 10,917,018 | 2,314,525 |
@@ -40,6 +41,7 @@ Here’s a highlight of the performance improvement:
 | 16 | 12,542,706 | 41,614,452 |
 | 32 | **12,219,651** | **81,403,555** |
 
+**Decrypt:**
 | Num Blocks | CPU Decrypt (B/s) | GPU Decrypt (B/s) |
 |-----------|-----------------|-----------------|
 | 1 | 2,515,560 | 553,932 |
